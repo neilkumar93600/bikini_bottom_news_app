@@ -1,0 +1,56 @@
+name: bikini_bottom_news
+description: "A SpongeBob SquarePants themed news application that enables users to upload, manage and share multimedia content including videos, images and documents. Features include video playback, file downloads, and a custom underwater-themed UI design inspired by Bikini Bottom."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter_animate: ^4.2.0
+  file_picker: ^6.0.0
+  dio: ^5.3.3
+  mime: ^1.0.4
+  video_player: ^2.7.2
+  google_fonts: ^6.2.1
+  rive: ^0.12.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  mockito: ^5.4.4
+  build_runner: ^2.4.8
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/logo.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/logo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/logo.png"
+
+  # Uncomment and update for custom assets if needed
+  # assets:
+  #   - assets/images/logo.png
+
+  # Uncomment and update for custom fonts if needed
+  # fonts:
+  #   - family: Bubbles
+  #     fonts:
+  #       - asset: assets/fonts/Bubbles-Regular.ttf
